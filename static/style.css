@@ -1,0 +1,80 @@
+body {
+    font-family :Arial ,sans-serif;
+    text-align: center;
+    background-color:#f4f4f4;
+
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+button{
+    padding : 10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#tabuleiro {
+    display:inline-block;
+    padding : 10px;
+    background-color :#ddd;
+    border-radius:8px;
+}
+
+.linha{display: flex;
+    justify-content:center;
+}
+
+.celula {
+    width: 32px;
+    height: 25px;
+    border: 1px solid #444;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+}
+.celula.selecionada {
+    background-color: #ffe066;
+}
+
+.celula.encontrada {
+    background-color: #8ce99a;
+    color: #000;
+}
+
+.riscada {
+    text-decoration: line-through;
+    color: gray;
+}
+.area-jogo{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:40px;
+    margin-top:20px;
+}
+
+.painel-palavras{
+    background:#ffffff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    min-width:200px;
+}
+
+#lista-palavras{
+    list-style:none;
+    padding:0;
+}
+
+#lista-palavras li{
+    padding:6px;
+    font-weight:bold;
+}

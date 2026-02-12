@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caça-palavras</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+
+<body>
+
+    <h1>Caça-Palavras</h1>
+
+    <select id="tema">
+        <option value="GERACOES">Gerações</option>
+        <option value="SISTEMA">Sistema</option>
+        <option value="SISTEMAS_OPERACIONAIS">Sistemas Operacionais</option>
+        <option value="PROCESSOS">Processos</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="gerarJogo()">Gerar novo caça-palavras</button>
+
+    <div id="instrucoes">
+        <h3>Como jogar</h3>
+        <p>
+            1️⃣ Escolha um tema <br>
+            2️⃣ Clique em <strong>Gerar caça-palavras</strong> <br>
+            3️⃣ Clique nas letras para formar as palavras
+        </p>
+    </div>
+
+    <div class="area-jogo">
+
+    <div id="tabuleiro"></div>
+
+    <div class="painel-palavras">
+        <h3>Palavras:</h3>
+        <ul id="lista-palavras"></ul>
+    </div>
+
+</div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
