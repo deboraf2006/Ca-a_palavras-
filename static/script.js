@@ -24,7 +24,13 @@ function gerarJogo() {
         });
 }
 
+function iniciarJogo(){
 
+    document.getElementById("tela-inicial").style.display = "none";
+
+    document.getElementById("tela-jogo").style.display = "block";
+
+}
 
 function desenharTabuleiro(matriz) {
     const tabuleiro = document.getElementById("tabuleiro");

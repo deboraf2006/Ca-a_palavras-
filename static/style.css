@@ -1,7 +1,25 @@
+/* somente a tela inicial apareça primeiro*/
+#tela-jogo{
+    display:none;  
+}
+
+#tela-inicial{
+    text-align :center;
+    margin-top:150px;
+}
+
+#tela-inicial h1{
+    font-size:48px;
+    color:white;
+}
+
 body {
     font-family :Arial ,sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
     text-align: center;
     background-color:#f4f4f4;
+    margin:0;
+    padding:0;
 
 }
 
@@ -10,10 +28,14 @@ h1 {
 }
 
 button{
+    background-color:#ff9800;
     padding : 10px 20px;
     font-size:16px;
     cursor:pointer;
+    color:white;
+    border:none;
 }
+
 
 #tabuleiro {
     display:inline-block;
